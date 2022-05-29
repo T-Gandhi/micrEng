@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CarEngageModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'CarEngage.dbo.cars_engage_2022' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="cars_engage_2022">
+          <Key>
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="sno" Type="smallint" Nullable="false" />
+          <Property Name="Make" Type="nvarchar" MaxLength="500" />
+          <Property Name="Model" Type="nvarchar" MaxLength="500" />
+          <Property Name="Variant" Type="nvarchar" MaxLength="500" />
+          <Property Name="Ex_Showroom_Price" Type="nvarchar" MaxLength="500" />
+          <Property Name="Displacement" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cylinders" Type="nvarchar" MaxLength="500" />
+          <Property Name="Valves_Per_Cylinder" Type="nvarchar" MaxLength="500" />
+          <Property Name="Drivetrain" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cylinder_Configuration" Type="nvarchar" MaxLength="500" />
+          <Property Name="Emission_Norm" Type="nvarchar" MaxLength="500" />
+          <Property Name="Engine_Location" Type="nvarchar" MaxLength="500" />
+          <Property Name="Fuel_System" Type="nvarchar" MaxLength="500" />
+          <Property Name="Fuel_Tank_Capacity" Type="nvarchar" MaxLength="500" />
+          <Property Name="Fuel_Type" Type="nvarchar" MaxLength="500" />
+          <Property Name="Height" Type="nvarchar" MaxLength="500" />
+          <Property Name="Length" Type="nvarchar" MaxLength="500" />
+          <Property Name="Width" Type="nvarchar" MaxLength="500" />
+          <Property Name="Body_Type" Type="nvarchar" MaxLength="500" />
+          <Property Name="Doors" Type="nvarchar" MaxLength="500" />
+          <Property Name="City_Mileage" Type="nvarchar" MaxLength="500" />
+          <Property Name="Highway_Mileage" Type="nvarchar" MaxLength="500" />
+          <Property Name="ARAI_Certified_Mileage" Type="nvarchar" MaxLength="500" />
+          <Property Name="ARAI_Certified_Mileage_for_CNG" Type="nvarchar" MaxLength="500" />
+          <Property Name="Kerb_Weight" Type="nvarchar" MaxLength="500" />
+          <Property Name="Gears" Type="nvarchar" MaxLength="500" />
+          <Property Name="Ground_Clearance" Type="nvarchar" MaxLength="500" />
+          <Property Name="Front_Brakes" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rear_Brakes" Type="nvarchar" MaxLength="500" />
+          <Property Name="Front_Suspension" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rear_Suspension" Type="nvarchar" MaxLength="500" />
+          <Property Name="Front_Track" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rear_Track" Type="nvarchar" MaxLength="500" />
+          <Property Name="Front_Tyre_Rim" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rear_Tyre_Rim" Type="nvarchar" MaxLength="500" />
+          <Property Name="Power_Steering" Type="nvarchar" MaxLength="500" />
+          <Property Name="Power_Windows" Type="nvarchar" MaxLength="500" />
+          <Property Name="Power_Seats" Type="nvarchar" MaxLength="500" />
+          <Property Name="Keyless_Entry" Type="nvarchar" MaxLength="500" />
+          <Property Name="Power" Type="nvarchar" MaxLength="500" />
+          <Property Name="Torque" Type="nvarchar" MaxLength="500" />
+          <Property Name="Odometer" Type="nvarchar" MaxLength="500" />
+          <Property Name="Speedometer" Type="nvarchar" MaxLength="500" />
+          <Property Name="Tachometer" Type="nvarchar" MaxLength="500" />
+          <Property Name="Tripmeter" Type="nvarchar" MaxLength="500" />
+          <Property Name="Seating_Capacity" Type="nvarchar" MaxLength="500" />
+          <Property Name="Seats_Material" Type="nvarchar" MaxLength="500" />
+          <Property Name="Type" Type="nvarchar" MaxLength="500" />
+          <Property Name="Wheelbase" Type="nvarchar" MaxLength="500" />
+          <Property Name="Wheels_Size" Type="nvarchar" MaxLength="500" />
+          <Property Name="Start_Stop_Button" Type="nvarchar" MaxLength="500" />
+          <Property Name="_12v_Power_Outlet" Type="nvarchar" MaxLength="500" />
+          <Property Name="Audiosystem" Type="nvarchar" MaxLength="500" />
+          <Property Name="Aux_in_Compatibility" Type="nvarchar" MaxLength="500" />
+          <Property Name="Average_Fuel_Consumption" Type="nvarchar" MaxLength="500" />
+          <Property Name="Basic_Warranty" Type="nvarchar" MaxLength="500" />
+          <Property Name="Bluetooth" Type="nvarchar" MaxLength="500" />
+          <Property Name="Boot_lid_Opener" Type="nvarchar" MaxLength="500" />
+          <Property Name="Boot_Space" Type="nvarchar" MaxLength="500" />
+          <Property Name="CD_MP3_DVD_Player" Type="nvarchar" MaxLength="500" />
+          <Property Name="Central_Locking" Type="nvarchar" MaxLength="500" />
+          <Property Name="Child_Safety_Locks" Type="nvarchar" MaxLength="500" />
+          <Property Name="Clock" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cup_Holders" Type="nvarchar" MaxLength="500" />
+          <Property Name="Distance_to_Empty" Type="nvarchar" MaxLength="500" />
+          <Property Name="Door_Pockets" Type="nvarchar" MaxLength="500" />
+          <Property Name="Engine_Malfunction_Light" Type="nvarchar" MaxLength="500" />
+          <Property Name="Extended_Warranty" Type="nvarchar" MaxLength="500" />
+          <Property Name="FM_Radio" Type="nvarchar" MaxLength="500" />
+          <Property Name="Fuel_lid_Opener" Type="nvarchar" MaxLength="500" />
+          <Property Name="Fuel_Gauge" Type="nvarchar" MaxLength="500" />
+          <Property Name="Handbrake" Type="nvarchar" MaxLength="500" />
+          <Property Name="Instrument_Console" Type="nvarchar" MaxLength="500" />
+          <Property Name="Low_Fuel_Warning" Type="nvarchar" MaxLength="500" />
+          <Property Name="Minimum_Turning_Radius" Type="nvarchar" MaxLength="500" />
+          <Property Name="Multifunction_Display" Type="nvarchar" MaxLength="500" />
+          <Property Name="Sun_Visor" Type="nvarchar" MaxLength="500" />
+          <Property Name="Third_Row_AC_Vents" Type="nvarchar" MaxLength="500" />
+          <Property Name="Ventilation_System" Type="nvarchar" MaxLength="500" />
+          <Property Name="Auto_Dimming_Rear_View_Mirror" Type="nvarchar" MaxLength="500" />
+          <Property Name="Hill_Assist" Type="nvarchar" MaxLength="500" />
+          <Property Name="Gear_Indicator" Type="nvarchar" MaxLength="500" />
+          <Property Name="_3_Point_Seat_Belt_in_Middle_Rear_Seat" Type="nvarchar" MaxLength="500" />
+          <Property Name="Ambient_Lightning" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cargo_Boot_Lights" Type="nvarchar" MaxLength="500" />
+          <Property Name="Drive_Modes" Type="nvarchar" MaxLength="500" />
+          <Property Name="Engine_Immobilizer" Type="nvarchar" MaxLength="500" />
+          <Property Name="High_Speed_Alert_System" Type="nvarchar" MaxLength="500" />
+          <Property Name="Lane_Watch_Camera_Side_Mirror_Camera" Type="nvarchar" MaxLength="500" />
+          <Property Name="Passenger_Side_Seat_Belt_Reminder" Type="nvarchar" MaxLength="500" />
+          <Property Name="Seat_Back_Pockets" Type="nvarchar" MaxLength="500" />
+          <Property Name="Voice_Recognition" Type="nvarchar" MaxLength="500" />
+          <Property Name="Walk_Away_Auto_Car_Lock" Type="nvarchar" MaxLength="500" />
+          <Property Name="ABS_Anti_lock_Braking_System" Type="nvarchar" MaxLength="500" />
+          <Property Name="Headlight_Reminder" Type="nvarchar" MaxLength="500" />
+          <Property Name="Adjustable_Headrests" Type="nvarchar" MaxLength="500" />
+          <Property Name="Gross_Vehicle_Weight" Type="nvarchar" MaxLength="500" />
+          <Property Name="Airbags" Type="nvarchar" MaxLength="500" />
+          <Property Name="Door_Ajar_Warning" Type="nvarchar" MaxLength="500" />
+          <Property Name="EBD_Electronic_Brake_force_Distribution" Type="nvarchar" MaxLength="500" />
+          <Property Name="Fasten_Seat_Belt_Warning" Type="nvarchar" MaxLength="500" />
+          <Property Name="Gear_Shift_Reminder" Type="nvarchar" MaxLength="500" />
+          <Property Name="Number_of_Airbags" Type="nvarchar" MaxLength="500" />
+          <Property Name="Compression_Ratio" Type="nvarchar" MaxLength="500" />
+          <Property Name="Adjustable_Steering_Column" Type="nvarchar" MaxLength="500" />
+          <Property Name="Other_Specs" Type="nvarchar" MaxLength="500" />
+          <Property Name="Other_specs1" Type="nvarchar" MaxLength="500" />
+          <Property Name="Parking_Assistance" Type="nvarchar" MaxLength="500" />
+          <Property Name="Key_Off_Reminder" Type="nvarchar" MaxLength="500" />
+          <Property Name="USB_Compatibility" Type="nvarchar" MaxLength="500" />
+          <Property Name="Android_Auto" Type="nvarchar" MaxLength="500" />
+          <Property Name="Apple_CarPlay" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cigarette_Lighter" Type="nvarchar" MaxLength="500" />
+          <Property Name="Infotainment_Screen" Type="nvarchar" MaxLength="500" />
+          <Property Name="Multifunction_Steering_Wheel" Type="nvarchar" MaxLength="500" />
+          <Property Name="Average_Speed" Type="nvarchar" MaxLength="500" />
+          <Property Name="EBA_Electronic_Brake_Assist" Type="nvarchar" MaxLength="500" />
+          <Property Name="Seat_Height_Adjustment" Type="nvarchar" MaxLength="500" />
+          <Property Name="Navigation_System" Type="nvarchar" MaxLength="500" />
+          <Property Name="Second_Row_AC_Vents" Type="nvarchar" MaxLength="500" />
+          <Property Name="Tyre_Pressure_Monitoring_System" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rear_Center_Armrest" Type="nvarchar" MaxLength="500" />
+          <Property Name="iPod_Compatibility" Type="nvarchar" MaxLength="500" />
+          <Property Name="ESP_Electronic_Stability_Program" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cooled_Glove_Box" Type="nvarchar" MaxLength="500" />
+          <Property Name="Recommended_Tyre_Pressure" Type="nvarchar" MaxLength="500" />
+          <Property Name="Heated_Seats" Type="nvarchar" MaxLength="500" />
+          <Property Name="Turbocharger" Type="nvarchar" MaxLength="500" />
+          <Property Name="ISOFIX_Child_Seat_Mount" Type="nvarchar" MaxLength="500" />
+          <Property Name="Rain_Sensing_Wipers" Type="nvarchar" MaxLength="500" />
+          <Property Name="Paddle_Shifters" Type="nvarchar" MaxLength="500" />
+          <Property Name="Leather_Wrapped_Steering" Type="nvarchar" MaxLength="500" />
+          <Property Name="Automatic_Headlamps" Type="nvarchar" MaxLength="500" />
+          <Property Name="Engine_Type" Type="nvarchar" MaxLength="500" />
+          <Property Name="ASR_Traction_Control" Type="nvarchar" MaxLength="500" />
+          <Property Name="Cruise_Control" Type="nvarchar" MaxLength="500" />
+          <Property Name="USB_Ports" Type="nvarchar" MaxLength="500" />
+          <Property Name="Heads_Up_Display" Type="nvarchar" MaxLength="500" />
+          <Property Name="Welcome_Lights" Type="nvarchar" MaxLength="500" />
+          <Property Name="Battery" Type="nvarchar" MaxLength="500" />
+          <Property Name="Electric_Range" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityContainer Name="CarEngageModel1StoreContainer">
+          <EntitySet Name="cars_engage_2022" EntityType="Self.cars_engage_2022" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [cars_engage_2022].[sno] AS [sno], 
+    [cars_engage_2022].[Make] AS [Make], 
+    [cars_engage_2022].[Model] AS [Model], 
+    [cars_engage_2022].[Variant] AS [Variant], 
+    [cars_engage_2022].[Ex_Showroom_Price] AS [Ex_Showroom_Price], 
+    [cars_engage_2022].[Displacement] AS [Displacement], 
+    [cars_engage_2022].[Cylinders] AS [Cylinders], 
+    [cars_engage_2022].[Valves_Per_Cylinder] AS [Valves_Per_Cylinder], 
+    [cars_engage_2022].[Drivetrain] AS [Drivetrain], 
+    [cars_engage_2022].[Cylinder_Configuration] AS [Cylinder_Configuration], 
+    [cars_engage_2022].[Emission_Norm] AS [Emission_Norm], 
+    [cars_engage_2022].[Engine_Location] AS [Engine_Location], 
+    [cars_engage_2022].[Fuel_System] AS [Fuel_System], 
+    [cars_engage_2022].[Fuel_Tank_Capacity] AS [Fuel_Tank_Capacity], 
+    [cars_engage_2022].[Fuel_Type] AS [Fuel_Type], 
+    [cars_engage_2022].[Height] AS [Height], 
+    [cars_engage_2022].[Length] AS [Length], 
+    [cars_engage_2022].[Width] AS [Width], 
+    [cars_engage_2022].[Body_Type] AS [Body_Type], 
+    [cars_engage_2022].[Doors] AS [Doors], 
+    [cars_engage_2022].[City_Mileage] AS [City_Mileage], 
+    [cars_engage_2022].[Highway_Mileage] AS [Highway_Mileage], 
+    [cars_engage_2022].[ARAI_Certified_Mileage] AS [ARAI_Certified_Mileage], 
+    [cars_engage_2022].[ARAI_Certified_Mileage_for_CNG] AS [ARAI_Certified_Mileage_for_CNG], 
+    [cars_engage_2022].[Kerb_Weight] AS [Kerb_Weight], 
+    [cars_engage_2022].[Gears] AS [Gears], 
+    [cars_engage_2022].[Ground_Clearance] AS [Ground_Clearance], 
+    [cars_engage_2022].[Front_Brakes] AS [Front_Brakes], 
+    [cars_engage_2022].[Rear_Brakes] AS [Rear_Brakes], 
+    [cars_engage_2022].[Front_Suspension] AS [Front_Suspension], 
+    [cars_engage_2022].[Rear_Suspension] AS [Rear_Suspension], 
+    [cars_engage_2022].[Front_Track] AS [Front_Track], 
+    [cars_engage_2022].[Rear_Track] AS [Rear_Track], 
+    [cars_engage_2022].[Front_Tyre_Rim] AS [Front_Tyre_Rim], 
+    [cars_engage_2022].[Rear_Tyre_Rim] AS [Rear_Tyre_Rim], 
+    [cars_engage_2022].[Power_Steering] AS [Power_Steering], 
+    [cars_engage_2022].[Power_Windows] AS [Power_Windows], 
+    [cars_engage_2022].[Power_Seats] AS [Power_Seats], 
+    [cars_engage_2022].[Keyless_Entry] AS [Keyless_Entry], 
+    [cars_engage_2022].[Power] AS [Power], 
+    [cars_engage_2022].[Torque] AS [Torque], 
+    [cars_engage_2022].[Odometer] AS [Odometer], 
+    [cars_engage_2022].[Speedometer] AS [Speedometer], 
+    [cars_engage_2022].[Tachometer] AS [Tachometer], 
+    [cars_engage_2022].[Tripmeter] AS [Tripmeter], 
+    [cars_engage_2022].[Seating_Capacity] AS [Seating_Capacity], 
+    [cars_engage_2022].[Seats_Material] AS [Seats_Material], 
+    [cars_engage_2022].[Type] AS [Type], 
+    [cars_engage_2022].[Wheelbase] AS [Wheelbase], 
+    [cars_engage_2022].[Wheels_Size] AS [Wheels_Size], 
+    [cars_engage_2022].[Start_Stop_Button] AS [Start_Stop_Button], 
+    [cars_engage_2022].[_12v_Power_Outlet] AS [_12v_Power_Outlet], 
+    [cars_engage_2022].[Audiosystem] AS [Audiosystem], 
+    [cars_engage_2022].[Aux_in_Compatibility] AS [Aux_in_Compatibility], 
+    [cars_engage_2022].[Average_Fuel_Consumption] AS [Average_Fuel_Consumption], 
+    [cars_engage_2022].[Basic_Warranty] AS [Basic_Warranty], 
+    [cars_engage_2022].[Bluetooth] AS [Bluetooth], 
+    [cars_engage_2022].[Boot_lid_Opener] AS [Boot_lid_Opener], 
+    [cars_engage_2022].[Boot_Space] AS [Boot_Space], 
+    [cars_engage_2022].[CD_MP3_DVD_Player] AS [CD_MP3_DVD_Player], 
+    [cars_engage_2022].[Central_Locking] AS [Central_Locking], 
+    [cars_engage_2022].[Child_Safety_Locks] AS [Child_Safety_Locks], 
+    [cars_engage_2022].[Clock] AS [Clock], 
+    [cars_engage_2022].[Cup_Holders] AS [Cup_Holders], 
+    [cars_engage_2022].[Distance_to_Empty] AS [Distance_to_Empty], 
+    [cars_engage_2022].[Door_Pockets] AS [Door_Pockets], 
+    [cars_engage_2022].[Engine_Malfunction_Light] AS [Engine_Malfunction_Light], 
+    [cars_engage_2022].[Extended_Warranty] AS [Extended_Warranty], 
+    [cars_engage_2022].[FM_Radio] AS [FM_Radio], 
+    [cars_engage_2022].[Fuel_lid_Opener] AS [Fuel_lid_Opener], 
+    [cars_engage_2022].[Fuel_Gauge] AS [Fuel_Gauge], 
+    [cars_engage_2022].[Handbrake] AS [Handbrake], 
+    [cars_engage_2022].[Instrument_Console] AS [Instrument_Console], 
+    [cars_engage_2022].[Low_Fuel_Warning] AS [Low_Fuel_Warning], 
+    [cars_engage_2022].[Minimum_Turning_Radius] AS [Minimum_Turning_Radius], 
+    [cars_engage_2022].[Multifunction_Display] AS [Multifunction_Display], 
+    [cars_engage_2022].[Sun_Visor] AS [Sun_Visor], 
+    [cars_engage_2022].[Third_Row_AC_Vents] AS [Third_Row_AC_Vents], 
+    [cars_engage_2022].[Ventilation_System] AS [Ventilation_System], 
+    [cars_engage_2022].[Auto_Dimming_Rear_View_Mirror] AS [Auto_Dimming_Rear_View_Mirror], 
+    [cars_engage_2022].[Hill_Assist] AS [Hill_Assist], 
+    [cars_engage_2022].[Gear_Indicator] AS [Gear_Indicator], 
+    [cars_engage_2022].[_3_Point_Seat_Belt_in_Middle_Rear_Seat] AS [_3_Point_Seat_Belt_in_Middle_Rear_Seat], 
+    [cars_engage_2022].[Ambient_Lightning] AS [Ambient_Lightning], 
+    [cars_engage_2022].[Cargo_Boot_Lights] AS [Cargo_Boot_Lights], 
+    [cars_engage_2022].[Drive_Modes] AS [Drive_Modes], 
+    [cars_engage_2022].[Engine_Immobilizer] AS [Engine_Immobilizer], 
+    [cars_engage_2022].[High_Speed_Alert_System] AS [High_Speed_Alert_System], 
+    [cars_engage_2022].[Lane_Watch_Camera_Side_Mirror_Camera] AS [Lane_Watch_Camera_Side_Mirror_Camera], 
+    [cars_engage_2022].[Passenger_Side_Seat_Belt_Reminder] AS [Passenger_Side_Seat_Belt_Reminder], 
+    [cars_engage_2022].[Seat_Back_Pockets] AS [Seat_Back_Pockets], 
+    [cars_engage_2022].[Voice_Recognition] AS [Voice_Recognition], 
+    [cars_engage_2022].[Walk_Away_Auto_Car_Lock] AS [Walk_Away_Auto_Car_Lock], 
+    [cars_engage_2022].[ABS_Anti_lock_Braking_System] AS [ABS_Anti_lock_Braking_System], 
+    [cars_engage_2022].[Headlight_Reminder] AS [Headlight_Reminder], 
+    [cars_engage_2022].[Adjustable_Headrests] AS [Adjustable_Headrests], 
+    [cars_engage_2022].[Gross_Vehicle_Weight] AS [Gross_Vehicle_Weight], 
+    [cars_engage_2022].[Airbags] AS [Airbags], 
+    [cars_engage_2022].[Door_Ajar_Warning] AS [Door_Ajar_Warning], 
+    [cars_engage_2022].[EBD_Electronic_Brake_force_Distribution] AS [EBD_Electronic_Brake_force_Distribution], 
+    [cars_engage_2022].[Fasten_Seat_Belt_Warning] AS [Fasten_Seat_Belt_Warning], 
+    [cars_engage_2022].[Gear_Shift_Reminder] AS [Gear_Shift_Reminder], 
+    [cars_engage_2022].[Number_of_Airbags] AS [Number_of_Airbags], 
+    [cars_engage_2022].[Compression_Ratio] AS [Compression_Ratio], 
+    [cars_engage_2022].[Adjustable_Steering_Column] AS [Adjustable_Steering_Column], 
+    [cars_engage_2022].[Other_Specs] AS [Other_Specs], 
+    [cars_engage_2022].[Other_specs1] AS [Other_specs1], 
+    [cars_engage_2022].[Parking_Assistance] AS [Parking_Assistance], 
+    [cars_engage_2022].[Key_Off_Reminder] AS [Key_Off_Reminder], 
+    [cars_engage_2022].[USB_Compatibility] AS [USB_Compatibility], 
+    [cars_engage_2022].[Android_Auto] AS [Android_Auto], 
+    [cars_engage_2022].[Apple_CarPlay] AS [Apple_CarPlay], 
+    [cars_engage_2022].[Cigarette_Lighter] AS [Cigarette_Lighter], 
+    [cars_engage_2022].[Infotainment_Screen] AS [Infotainment_Screen], 
+    [cars_engage_2022].[Multifunction_Steering_Wheel] AS [Multifunction_Steering_Wheel], 
+    [cars_engage_2022].[Average_Speed] AS [Average_Speed], 
+    [cars_engage_2022].[EBA_Electronic_Brake_Assist] AS [EBA_Electronic_Brake_Assist], 
+    [cars_engage_2022].[Seat_Height_Adjustment] AS [Seat_Height_Adjustment], 
+    [cars_engage_2022].[Navigation_System] AS [Navigation_System], 
+    [cars_engage_2022].[Second_Row_AC_Vents] AS [Second_Row_AC_Vents], 
+    [cars_engage_2022].[Tyre_Pressure_Monitoring_System] AS [Tyre_Pressure_Monitoring_System], 
+    [cars_engage_2022].[Rear_Center_Armrest] AS [Rear_Center_Armrest], 
+    [cars_engage_2022].[iPod_Compatibility] AS [iPod_Compatibility], 
+    [cars_engage_2022].[ESP_Electronic_Stability_Program] AS [ESP_Electronic_Stability_Program], 
+    [cars_engage_2022].[Cooled_Glove_Box] AS [Cooled_Glove_Box], 
+    [cars_engage_2022].[Recommended_Tyre_Pressure] AS [Recommended_Tyre_Pressure], 
+    [cars_engage_2022].[Heated_Seats] AS [Heated_Seats], 
+    [cars_engage_2022].[Turbocharger] AS [Turbocharger], 
+    [cars_engage_2022].[ISOFIX_Child_Seat_Mount] AS [ISOFIX_Child_Seat_Mount], 
+    [cars_engage_2022].[Rain_Sensing_Wipers] AS [Rain_Sensing_Wipers], 
+    [cars_engage_2022].[Paddle_Shifters] AS [Paddle_Shifters], 
+    [cars_engage_2022].[Leather_Wrapped_Steering] AS [Leather_Wrapped_Steering], 
+    [cars_engage_2022].[Automatic_Headlamps] AS [Automatic_Headlamps], 
+    [cars_engage_2022].[Engine_Type] AS [Engine_Type], 
+    [cars_engage_2022].[ASR_Traction_Control] AS [ASR_Traction_Control], 
+    [cars_engage_2022].[Cruise_Control] AS [Cruise_Control], 
+    [cars_engage_2022].[USB_Ports] AS [USB_Ports], 
+    [cars_engage_2022].[Heads_Up_Display] AS [Heads_Up_Display], 
+    [cars_engage_2022].[Welcome_Lights] AS [Welcome_Lights], 
+    [cars_engage_2022].[Battery] AS [Battery], 
+    [cars_engage_2022].[Electric_Range] AS [Electric_Range]
+    FROM [dbo].[cars_engage_2022] AS [cars_engage_2022]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CarEngageModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="cars_engage_2022">
+          <Key>
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="sno" Type="Int16" Nullable="false" />
+          <Property Name="Make" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Variant" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Ex_Showroom_Price" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Displacement" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cylinders" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Valves_Per_Cylinder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Drivetrain" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cylinder_Configuration" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Emission_Norm" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Engine_Location" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Fuel_System" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Fuel_Tank_Capacity" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Fuel_Type" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Height" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Length" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Width" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Body_Type" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Doors" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="City_Mileage" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Highway_Mileage" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ARAI_Certified_Mileage" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ARAI_Certified_Mileage_for_CNG" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Kerb_Weight" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Gears" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Ground_Clearance" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Front_Brakes" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rear_Brakes" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Front_Suspension" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rear_Suspension" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Front_Track" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rear_Track" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Front_Tyre_Rim" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rear_Tyre_Rim" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Power_Steering" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Power_Windows" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Power_Seats" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Keyless_Entry" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Power" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Torque" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Odometer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Speedometer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Tachometer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Tripmeter" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Seating_Capacity" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Seats_Material" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Wheelbase" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Wheels_Size" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Start_Stop_Button" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="C_12v_Power_Outlet" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Audiosystem" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Aux_in_Compatibility" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Average_Fuel_Consumption" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Basic_Warranty" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Bluetooth" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Boot_lid_Opener" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Boot_Space" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CD_MP3_DVD_Player" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Central_Locking" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Child_Safety_Locks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Clock" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cup_Holders" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Distance_to_Empty" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Door_Pockets" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Engine_Malfunction_Light" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Extended_Warranty" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="FM_Radio" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Fuel_lid_Opener" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Fuel_Gauge" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Handbrake" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Instrument_Console" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Low_Fuel_Warning" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Minimum_Turning_Radius" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Multifunction_Display" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Sun_Visor" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Third_Row_AC_Vents" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Ventilation_System" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Auto_Dimming_Rear_View_Mirror" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Hill_Assist" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Gear_Indicator" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="C_3_Point_Seat_Belt_in_Middle_Rear_Seat" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Ambient_Lightning" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo_Boot_Lights" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Drive_Modes" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Engine_Immobilizer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="High_Speed_Alert_System" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Lane_Watch_Camera_Side_Mirror_Camera" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Passenger_Side_Seat_Belt_Reminder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Seat_Back_Pockets" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Voice_Recognition" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Walk_Away_Auto_Car_Lock" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ABS_Anti_lock_Braking_System" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Headlight_Reminder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Adjustable_Headrests" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Gross_Vehicle_Weight" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Airbags" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Door_Ajar_Warning" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EBD_Electronic_Brake_force_Distribution" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Fasten_Seat_Belt_Warning" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Gear_Shift_Reminder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Number_of_Airbags" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Compression_Ratio" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Adjustable_Steering_Column" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Other_Specs" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Other_specs1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Parking_Assistance" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Key_Off_Reminder" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="USB_Compatibility" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Android_Auto" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Apple_CarPlay" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cigarette_Lighter" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Infotainment_Screen" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Multifunction_Steering_Wheel" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Average_Speed" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EBA_Electronic_Brake_Assist" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Seat_Height_Adjustment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Navigation_System" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Second_Row_AC_Vents" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Tyre_Pressure_Monitoring_System" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rear_Center_Armrest" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="iPod_Compatibility" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ESP_Electronic_Stability_Program" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cooled_Glove_Box" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Recommended_Tyre_Pressure" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Heated_Seats" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Turbocharger" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ISOFIX_Child_Seat_Mount" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Rain_Sensing_Wipers" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Paddle_Shifters" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Leather_Wrapped_Steering" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Automatic_Headlamps" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Engine_Type" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ASR_Traction_Control" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Cruise_Control" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="USB_Ports" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Heads_Up_Display" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Welcome_Lights" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Battery" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Electric_Range" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="CarEngageEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cars_engage_2022" EntityType="Self.cars_engage_2022" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CarEngageModel1StoreContainer" CdmEntityContainer="CarEngageEntities1">
+          <EntitySetMapping Name="cars_engage_2022">
+            <EntityTypeMapping TypeName="CarEngageModel1.cars_engage_2022">
+              <MappingFragment StoreEntitySet="cars_engage_2022">
+                <ScalarProperty Name="sno" ColumnName="sno" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Variant" ColumnName="Variant" />
+                <ScalarProperty Name="Ex_Showroom_Price" ColumnName="Ex_Showroom_Price" />
+                <ScalarProperty Name="Displacement" ColumnName="Displacement" />
+                <ScalarProperty Name="Cylinders" ColumnName="Cylinders" />
+                <ScalarProperty Name="Valves_Per_Cylinder" ColumnName="Valves_Per_Cylinder" />
+                <ScalarProperty Name="Drivetrain" ColumnName="Drivetrain" />
+                <ScalarProperty Name="Cylinder_Configuration" ColumnName="Cylinder_Configuration" />
+                <ScalarProperty Name="Emission_Norm" ColumnName="Emission_Norm" />
+                <ScalarProperty Name="Engine_Location" ColumnName="Engine_Location" />
+                <ScalarProperty Name="Fuel_System" ColumnName="Fuel_System" />
+                <ScalarProperty Name="Fuel_Tank_Capacity" ColumnName="Fuel_Tank_Capacity" />
+                <ScalarProperty Name="Fuel_Type" ColumnName="Fuel_Type" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Body_Type" ColumnName="Body_Type" />
+                <ScalarProperty Name="Doors" ColumnName="Doors" />
+                <ScalarProperty Name="City_Mileage" ColumnName="City_Mileage" />
+                <ScalarProperty Name="Highway_Mileage" ColumnName="Highway_Mileage" />
+                <ScalarProperty Name="ARAI_Certified_Mileage" ColumnName="ARAI_Certified_Mileage" />
+                <ScalarProperty Name="ARAI_Certified_Mileage_for_CNG" ColumnName="ARAI_Certified_Mileage_for_CNG" />
+                <ScalarProperty Name="Kerb_Weight" ColumnName="Kerb_Weight" />
+                <ScalarProperty Name="Gears" ColumnName="Gears" />
+                <ScalarProperty Name="Ground_Clearance" ColumnName="Ground_Clearance" />
+                <ScalarProperty Name="Front_Brakes" ColumnName="Front_Brakes" />
+                <ScalarProperty Name="Rear_Brakes" ColumnName="Rear_Brakes" />
+                <ScalarProperty Name="Front_Suspension" ColumnName="Front_Suspension" />
+                <ScalarProperty Name="Rear_Suspension" ColumnName="Rear_Suspension" />
+                <ScalarProperty Name="Front_Track" ColumnName="Front_Track" />
+                <ScalarProperty Name="Rear_Track" ColumnName="Rear_Track" />
+                <ScalarProperty Name="Front_Tyre_Rim" ColumnName="Front_Tyre_Rim" />
+                <ScalarProperty Name="Rear_Tyre_Rim" ColumnName="Rear_Tyre_Rim" />
+                <ScalarProperty Name="Power_Steering" ColumnName="Power_Steering" />
+                <ScalarProperty Name="Power_Windows" ColumnName="Power_Windows" />
+                <ScalarProperty Name="Power_Seats" ColumnName="Power_Seats" />
+                <ScalarProperty Name="Keyless_Entry" ColumnName="Keyless_Entry" />
+                <ScalarProperty Name="Power" ColumnName="Power" />
+                <ScalarProperty Name="Torque" ColumnName="Torque" />
+                <ScalarProperty Name="Odometer" ColumnName="Odometer" />
+                <ScalarProperty Name="Speedometer" ColumnName="Speedometer" />
+                <ScalarProperty Name="Tachometer" ColumnName="Tachometer" />
+                <ScalarProperty Name="Tripmeter" ColumnName="Tripmeter" />
+                <ScalarProperty Name="Seating_Capacity" ColumnName="Seating_Capacity" />
+                <ScalarProperty Name="Seats_Material" ColumnName="Seats_Material" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Wheelbase" ColumnName="Wheelbase" />
+                <ScalarProperty Name="Wheels_Size" ColumnName="Wheels_Size" />
+                <ScalarProperty Name="Start_Stop_Button" ColumnName="Start_Stop_Button" />
+                <ScalarProperty Name="C_12v_Power_Outlet" ColumnName="_12v_Power_Outlet" />
+                <ScalarProperty Name="Audiosystem" ColumnName="Audiosystem" />
+                <ScalarProperty Name="Aux_in_Compatibility" ColumnName="Aux_in_Compatibility" />
+                <ScalarProperty Name="Average_Fuel_Consumption" ColumnName="Average_Fuel_Consumption" />
+                <ScalarProperty Name="Basic_Warranty" ColumnName="Basic_Warranty" />
+                <ScalarProperty Name="Bluetooth" ColumnName="Bluetooth" />
+                <ScalarProperty Name="Boot_lid_Opener" ColumnName="Boot_lid_Opener" />
+                <ScalarProperty Name="Boot_Space" ColumnName="Boot_Space" />
+                <ScalarProperty Name="CD_MP3_DVD_Player" ColumnName="CD_MP3_DVD_Player" />
+                <ScalarProperty Name="Central_Locking" ColumnName="Central_Locking" />
+                <ScalarProperty Name="Child_Safety_Locks" ColumnName="Child_Safety_Locks" />
+                <ScalarProperty Name="Clock" ColumnName="Clock" />
+                <ScalarProperty Name="Cup_Holders" ColumnName="Cup_Holders" />
+                <ScalarProperty Name="Distance_to_Empty" ColumnName="Distance_to_Empty" />
+                <ScalarProperty Name="Door_Pockets" ColumnName="Door_Pockets" />
+                <ScalarProperty Name="Engine_Malfunction_Light" ColumnName="Engine_Malfunction_Light" />
+                <ScalarProperty Name="Extended_Warranty" ColumnName="Extended_Warranty" />
+                <ScalarProperty Name="FM_Radio" ColumnName="FM_Radio" />
+                <ScalarProperty Name="Fuel_lid_Opener" ColumnName="Fuel_lid_Opener" />
+                <ScalarProperty Name="Fuel_Gauge" ColumnName="Fuel_Gauge" />
+                <ScalarProperty Name="Handbrake" ColumnName="Handbrake" />
+                <ScalarProperty Name="Instrument_Console" ColumnName="Instrument_Console" />
+                <ScalarProperty Name="Low_Fuel_Warning" ColumnName="Low_Fuel_Warning" />
+                <ScalarProperty Name="Minimum_Turning_Radius" ColumnName="Minimum_Turning_Radius" />
+                <ScalarProperty Name="Multifunction_Display" ColumnName="Multifunction_Display" />
+                <ScalarProperty Name="Sun_Visor" ColumnName="Sun_Visor" />
+                <ScalarProperty Name="Third_Row_AC_Vents" ColumnName="Third_Row_AC_Vents" />
+                <ScalarProperty Name="Ventilation_System" ColumnName="Ventilation_System" />
+                <ScalarProperty Name="Auto_Dimming_Rear_View_Mirror" ColumnName="Auto_Dimming_Rear_View_Mirror" />
+                <ScalarProperty Name="Hill_Assist" ColumnName="Hill_Assist" />
+                <ScalarProperty Name="Gear_Indicator" ColumnName="Gear_Indicator" />
+                <ScalarProperty Name="C_3_Point_Seat_Belt_in_Middle_Rear_Seat" ColumnName="_3_Point_Seat_Belt_in_Middle_Rear_Seat" />
+                <ScalarProperty Name="Ambient_Lightning" ColumnName="Ambient_Lightning" />
+                <ScalarProperty Name="Cargo_Boot_Lights" ColumnName="Cargo_Boot_Lights" />
+                <ScalarProperty Name="Drive_Modes" ColumnName="Drive_Modes" />
+                <ScalarProperty Name="Engine_Immobilizer" ColumnName="Engine_Immobilizer" />
+                <ScalarProperty Name="High_Speed_Alert_System" ColumnName="High_Speed_Alert_System" />
+                <ScalarProperty Name="Lane_Watch_Camera_Side_Mirror_Camera" ColumnName="Lane_Watch_Camera_Side_Mirror_Camera" />
+                <ScalarProperty Name="Passenger_Side_Seat_Belt_Reminder" ColumnName="Passenger_Side_Seat_Belt_Reminder" />
+                <ScalarProperty Name="Seat_Back_Pockets" ColumnName="Seat_Back_Pockets" />
+                <ScalarProperty Name="Voice_Recognition" ColumnName="Voice_Recognition" />
+                <ScalarProperty Name="Walk_Away_Auto_Car_Lock" ColumnName="Walk_Away_Auto_Car_Lock" />
+                <ScalarProperty Name="ABS_Anti_lock_Braking_System" ColumnName="ABS_Anti_lock_Braking_System" />
+                <ScalarProperty Name="Headlight_Reminder" ColumnName="Headlight_Reminder" />
+                <ScalarProperty Name="Adjustable_Headrests" ColumnName="Adjustable_Headrests" />
+                <ScalarProperty Name="Gross_Vehicle_Weight" ColumnName="Gross_Vehicle_Weight" />
+                <ScalarProperty Name="Airbags" ColumnName="Airbags" />
+                <ScalarProperty Name="Door_Ajar_Warning" ColumnName="Door_Ajar_Warning" />
+                <ScalarProperty Name="EBD_Electronic_Brake_force_Distribution" ColumnName="EBD_Electronic_Brake_force_Distribution" />
+                <ScalarProperty Name="Fasten_Seat_Belt_Warning" ColumnName="Fasten_Seat_Belt_Warning" />
+                <ScalarProperty Name="Gear_Shift_Reminder" ColumnName="Gear_Shift_Reminder" />
+                <ScalarProperty Name="Number_of_Airbags" ColumnName="Number_of_Airbags" />
+                <ScalarProperty Name="Compression_Ratio" ColumnName="Compression_Ratio" />
+                <ScalarProperty Name="Adjustable_Steering_Column" ColumnName="Adjustable_Steering_Column" />
+                <ScalarProperty Name="Other_Specs" ColumnName="Other_Specs" />
+                <ScalarProperty Name="Other_specs1" ColumnName="Other_specs1" />
+                <ScalarProperty Name="Parking_Assistance" ColumnName="Parking_Assistance" />
+                <ScalarProperty Name="Key_Off_Reminder" ColumnName="Key_Off_Reminder" />
+                <ScalarProperty Name="USB_Compatibility" ColumnName="USB_Compatibility" />
+                <ScalarProperty Name="Android_Auto" ColumnName="Android_Auto" />
+                <ScalarProperty Name="Apple_CarPlay" ColumnName="Apple_CarPlay" />
+                <ScalarProperty Name="Cigarette_Lighter" ColumnName="Cigarette_Lighter" />
+                <ScalarProperty Name="Infotainment_Screen" ColumnName="Infotainment_Screen" />
+                <ScalarProperty Name="Multifunction_Steering_Wheel" ColumnName="Multifunction_Steering_Wheel" />
+                <ScalarProperty Name="Average_Speed" ColumnName="Average_Speed" />
+                <ScalarProperty Name="EBA_Electronic_Brake_Assist" ColumnName="EBA_Electronic_Brake_Assist" />
+                <ScalarProperty Name="Seat_Height_Adjustment" ColumnName="Seat_Height_Adjustment" />
+                <ScalarProperty Name="Navigation_System" ColumnName="Navigation_System" />
+                <ScalarProperty Name="Second_Row_AC_Vents" ColumnName="Second_Row_AC_Vents" />
+                <ScalarProperty Name="Tyre_Pressure_Monitoring_System" ColumnName="Tyre_Pressure_Monitoring_System" />
+                <ScalarProperty Name="Rear_Center_Armrest" ColumnName="Rear_Center_Armrest" />
+                <ScalarProperty Name="iPod_Compatibility" ColumnName="iPod_Compatibility" />
+                <ScalarProperty Name="ESP_Electronic_Stability_Program" ColumnName="ESP_Electronic_Stability_Program" />
+                <ScalarProperty Name="Cooled_Glove_Box" ColumnName="Cooled_Glove_Box" />
+                <ScalarProperty Name="Recommended_Tyre_Pressure" ColumnName="Recommended_Tyre_Pressure" />
+                <ScalarProperty Name="Heated_Seats" ColumnName="Heated_Seats" />
+                <ScalarProperty Name="Turbocharger" ColumnName="Turbocharger" />
+                <ScalarProperty Name="ISOFIX_Child_Seat_Mount" ColumnName="ISOFIX_Child_Seat_Mount" />
+                <ScalarProperty Name="Rain_Sensing_Wipers" ColumnName="Rain_Sensing_Wipers" />
+                <ScalarProperty Name="Paddle_Shifters" ColumnName="Paddle_Shifters" />
+                <ScalarProperty Name="Leather_Wrapped_Steering" ColumnName="Leather_Wrapped_Steering" />
+                <ScalarProperty Name="Automatic_Headlamps" ColumnName="Automatic_Headlamps" />
+                <ScalarProperty Name="Engine_Type" ColumnName="Engine_Type" />
+                <ScalarProperty Name="ASR_Traction_Control" ColumnName="ASR_Traction_Control" />
+                <ScalarProperty Name="Cruise_Control" ColumnName="Cruise_Control" />
+                <ScalarProperty Name="USB_Ports" ColumnName="USB_Ports" />
+                <ScalarProperty Name="Heads_Up_Display" ColumnName="Heads_Up_Display" />
+                <ScalarProperty Name="Welcome_Lights" ColumnName="Welcome_Lights" />
+                <ScalarProperty Name="Battery" ColumnName="Battery" />
+                <ScalarProperty Name="Electric_Range" ColumnName="Electric_Range" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="1a3941d807314d699f99205e167e4d66" Name="Diagram1">
+        <EntityTypeShape EntityType="CarEngageModel1.cars_engage_2022" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
